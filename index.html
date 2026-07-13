@@ -67,6 +67,12 @@
         .logo{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#ff8aa2);display:grid;place-items:center;color:white;font-weight:700;font-family:'Dancing Script',cursive;font-size:24px}
         h1{margin:0;font-family:'Dancing Script',cursive;font-size:34px;color:#5a1226}
         p.lead{margin:8px 0 18px;color:#6b3340}
+        .rose-decor{display:flex;gap:8px;justify-content:center;margin:8px 0 10px;font-size:20px;opacity:.9}
+        .rose-decor span{display:inline-block;animation:sway 2.6s ease-in-out infinite}
+        .rose-decor span:nth-child(2){animation-delay:.4s}
+        .rose-decor span:nth-child(3){animation-delay:.8s}
+        .creator{margin-top:16px;text-align:center;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#9a4460}
+        @keyframes sway{0%,100%{transform:rotate(0deg)}50%{transform:rotate(8deg)}}
 
         /* Reveal area */
         .confess-area{background:linear-gradient(180deg,#fff6f8,#fff);border-radius:12px;padding:22px;min-height:120px;display:flex;align-items:center;justify-content:center;position:relative}
@@ -109,6 +115,10 @@
                 <div class="message" id="message" aria-hidden="true" style="display:none"></div>
             </div>
 
+            <div class="rose-decor" aria-hidden="true">
+                <span>🌹</span><span>🌹</span><span>🌹</span>
+            </div>
+
             <div class="controls">
                 <button class="btn" id="reveal">Reveal</button>
                 <button class="btn alt" id="reset">Again</button>
@@ -127,6 +137,8 @@
                 <svg class="heart" style="left:45%" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9-7.5C-0.5 8.5 4.5 3 7 5.5c1.5 1.4 2.2 3.4 5 3.4s3.5-2 5-3.4C19.5 3 24.5 8.5 21 13.5 19 16.65 12 21 12 21z" fill="#ff4b6b" opacity="0.95"/></svg>
                 <svg class="heart" style="left:70%" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9-7.5C-0.5 8.5 4.5 3 7 5.5c1.5 1.4 2.2 3.4 5 3.4s3.5-2 5-3.4C19.5 3 24.5 8.5 21 13.5 19 16.65 12 21 12 21z" fill="#ff2e55" opacity="0.92"/></svg>
             </div>
+
+            <div class="creator">Created by JAMMYY</div>
         </div>
     </div>
 
